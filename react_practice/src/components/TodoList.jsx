@@ -14,7 +14,7 @@ const TodoList = () => {
 
   const removeTodo = (index) => {
     console.log("remove button ");
-    
+
     const updatedTodos = todos.filter((i) => i !== index);
     setTodos(updatedTodos);
   };
@@ -33,13 +33,12 @@ const TodoList = () => {
       <div>{todos}</div>
 
       <ul>
-        {todos.map((todo, index) => (
-            
+        {todos.map((todo, index) => {
           <li key={index}>
             {todo}
-            <button onClick={()=> removeTodo(index)}>Remove</button>
-          </li>
-        ))}
+            <button onClick={() => removeTodo(index)}>Remove</button>
+          </li>;
+        })}
       </ul>
     </div>
   );
