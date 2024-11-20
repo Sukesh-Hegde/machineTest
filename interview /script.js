@@ -1,7 +1,11 @@
-const fruits = ["apple", "banana","cherry","data"]
 
-const [first, scnd, ...rest] = fruits
+function outerFunction(){
+    let otervariable= "hello"
+    function innerfunction(){
+        con
+    }
+    return innerfunction;
+}
 
-console.log(first);
-console.log(rest);
-
+const closureEX = outerFunction();
+closureEX()
